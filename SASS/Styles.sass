@@ -1,10 +1,37 @@
 body
   font-family: 'Roboto', sans-serif
+  margin: 0
+  padding: 0
+
+.container
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 375px
+  margin: 0 auto
+
+.head-top
+  display: flex
+
+.head-arrow
+  display: flex
+  width: 30px
+  height: 30px
+
+.head-logo
+  display: flex
+  width: 197px
+  height: 36px
+
+.no-bullets
+  list-style-type: none
+  padding: 0
 
 $gradient-start: #FF79DA
 $gradient-end: #9356DC
 
-button
+.btn
   width: 218px
   height: 50px
   top: 50px
@@ -12,10 +39,10 @@ button
   border: none
   background: linear-gradient($gradient-start, $gradient-end)
   box-shadow: 0px 4px 10px 0px #00000040
-  transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out
+  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out
   &:hover 
     box-shadow: 0px 4px 15px 0px #00000059
-    background: linear-gradient(lighten($gradient-start, 6%), lighten($gradient-end, 6%))
+    opacity: 85%
   
 .TxtWhite
   color: #FFFFFF
