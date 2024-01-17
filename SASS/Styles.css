@@ -41,7 +41,12 @@ body {
   background-color: #F6F6F6;
 }
 .intro-et-btn h1 {
+  font-size: 24px;
   margin: 0px;
+}
+.intro-et-btn h2 {
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .section-fct {
@@ -49,6 +54,11 @@ body {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+}
+.section-fct h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 20px;
 }
 
 .fct {
@@ -68,6 +78,8 @@ body {
   flex-grow: 1;
   text-align: center;
   margin: 0 30px 0 0px;
+  font-size: 16px;
+  font-weight: 500;
 }
 .fct .fa-store {
   color: #9356DC;
@@ -98,12 +110,16 @@ body {
 
 .loca-input {
   border: none;
+  font-size: 16px;
+  font-weight: 500;
   background-color: transparent;
   text-align: center;
   width: 140px;
 }
 
 .btn {
+  font-size: 16px;
+  font-weight: 500;
   width: 218px;
   height: 50px;
   margin-bottom: 60px;
@@ -139,7 +155,9 @@ body {
 }
 
 .num-fct {
+  font-size: 14px;
   background: #9356DC;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,6 +179,12 @@ body {
   margin-right: auto;
   margin-top: 20px;
   padding-top: 30px;
+  padding-bottom: 30px;
+}
+.section-rest h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 20px;
 }
 
 .rest-list {
@@ -195,6 +219,15 @@ body {
 }
 .contenu-rest .text-container {
   margin-bottom: 8px;
+  margin-left: 10px;
+}
+.contenu-rest .text-container .title-rest {
+  font-size: 18px;
+  font-weight: 700;
+}
+.contenu-rest .text-container .loca-rest {
+  font-size: 17px;
+  font-weight: 300;
 }
 .contenu-rest i {
   padding: 25px;
