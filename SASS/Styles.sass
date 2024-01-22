@@ -5,6 +5,8 @@ $color-grey2: #EAEAEA
 $color-grey3: #7E7E7E
 $color-grey4: #353535
 $color-primary: #9356DC
+$color-green1: #99E2D0
+$color-green2: #008766
 
 =centrage-block
   display: block
@@ -27,25 +29,24 @@ body
   display: flex
   flex-direction: column
 
-.head-arrow
-  display: flex
-  width: 30px
-  height: 30px
 
 .head-top
   align-items: center
+  padding: 20px
   position: relative 
   z-index: 2
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2)
   display: flex
-  .head-arrow
-    margin: 22px
+  justify-content: center
+  .arrow-on
+    margin: 0px
+    padding-right: 10px
+  .arrow-off
+    display: none
   .head-logo
-    display: flex
-    margin: 20px
+    margin: 0px
     img
-      width: 197px
-      height: auto
+      max-width: 197px
 
 .intro-et-btn
   padding-top: 30px
@@ -61,6 +62,7 @@ body
 
 .section-fct
   +centrage-block
+  margin-top: 45px
   h3
     +title-margin
 
@@ -113,7 +115,7 @@ body
 .btn
   font-size: 16px
   font-weight: 500
-  width: 218px
+  max-width: 218px
   height: 50px
   margin-bottom: 60px
   border-radius: 25px
@@ -160,9 +162,9 @@ body
 
 .section-rest
   +centrage-block
-  margin-top: 20px
+  margin-top: 60px
   padding-top: 30px
-  padding-bottom: 30px
+  padding-bottom: 50px
   h3
     +title-margin
 
@@ -187,6 +189,17 @@ body
   border-radius: 20px
   background: white
 
+.nouv
+  background-color: $color-green1
+  font-size: 17px
+  color: $color-green2
+  border-radius: 2px
+  padding: 5px
+  position: absolute
+  right: 0
+  margin-right: 5%
+  margin-top: 5%
+
 .contenu-rest
     display: flex
     flex-direction: row
@@ -206,6 +219,17 @@ body
 
 footer
   background: $color-grey4
+  font-size: 16px
+  font-weight: 500
   color: white
+  padding: 20px
+  .all-txt-foot
+    display: flex
+    flex-direction: column
+    gap: 8px
+    i
+      width: 30px
   img
     filter: brightness(0) invert(1)
+    height: 20px
+    padding-bottom: 20px
