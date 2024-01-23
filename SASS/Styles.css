@@ -171,6 +171,80 @@ body {
   background: #F6F6F6;
 }
 
+.page-rest {
+  display: flex;
+}
+.page-rest img {
+  width: 100%;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 80%;
+     object-position: center 80%;
+}
+
+.page-cadre-menu {
+  display: flex;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  justify-content: center;
+}
+
+.page-menu {
+  display: block;
+}
+
+.title-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contenu-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.contenu-menu h2 {
+  align-self: start;
+}
+.contenu-menu h3 {
+  align-self: start;
+}
+.contenu-menu h4 {
+  align-self: start;
+}
+
+.cadre-plat {
+  padding: 10px;
+  width: 85%;
+  max-width: 350px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cadre-plat .title-plat {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+.cadre-plat .dtl-plat {
+  display: flex;
+  justify-content: space-between;
+}
+.cadre-plat .dtl-plat .detail {
+  font-size: 15px;
+  font-weight: 300;
+}
+.cadre-plat .dtl-plat .plat-prix {
+  font-size: 15px;
+  font-weight: 600;
+}
+
 .section-rest {
   display: block;
   max-width: 375px;
