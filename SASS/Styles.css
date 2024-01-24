@@ -16,7 +16,6 @@ body {
   z-index: 2;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
   display: flex;
-  justify-content: center;
 }
 .head-top .arrow-on {
   margin: 0px;
@@ -26,10 +25,14 @@ body {
   display: none;
 }
 .head-top .head-logo {
-  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(-10px);
 }
 .head-top .head-logo img {
-  max-width: 197px;
+  width: 100%;
+  max-width: 160px;
+  transform: translateY(5px);
 }
 
 .intro-et-btn {
@@ -185,19 +188,29 @@ body {
 
 .page-cadre-menu {
   display: flex;
+  flex-direction: column;
   border-radius: 20px;
   background-color: #F6F6F6;
   justify-content: center;
+  margin-top: -20px;
+  position: relative;
+  z-index: 2;
 }
 
 .page-menu {
   display: block;
+  align-self: center;
 }
 
 .title-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.title-menu h1 {
+  text-align: center;
 }
 
 .contenu-menu {
@@ -207,19 +220,44 @@ body {
   align-items: center;
 }
 .contenu-menu h2 {
+  text-transform: uppercase;
   align-self: start;
+  font-size: 17px;
+  font-weight: 100;
+  margin-bottom: 0px;
+  margin-left: 8px;
 }
 .contenu-menu h3 {
+  text-transform: uppercase;
   align-self: start;
+  font-size: 17px;
+  font-weight: 100;
+  margin-bottom: 0px;
+  margin-left: 8px;
 }
 .contenu-menu h4 {
+  text-transform: uppercase;
   align-self: start;
+  font-size: 17px;
+  font-weight: 100;
+  margin-bottom: 0px;
+  margin-left: 8px;
+}
+
+.tiret-vert {
+  background-color: #99E2D0;
+  position: relative;
+  height: 3px;
+  width: 40px;
+  align-self: start;
+  bottom: 10px;
+  margin-left: 8px;
 }
 
 .cadre-plat {
   padding: 10px;
-  width: 85%;
-  max-width: 350px;
+  width: 90%;
+  max-width: 370px;
   border-radius: 20px;
   background: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
@@ -229,7 +267,7 @@ body {
 }
 .cadre-plat .title-plat {
   display: block;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
 }
 .cadre-plat .dtl-plat {
@@ -237,12 +275,35 @@ body {
   justify-content: space-between;
 }
 .cadre-plat .dtl-plat .detail {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
 }
 .cadre-plat .dtl-plat .plat-prix {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+}
+.menu-btn .btn {
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 218px;
+  height: 50px;
+  margin-bottom: 60px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-top: 60px;
+  width: 100%;
+}
+.menu-btn .btn:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+  opacity: 85%;
 }
 
 .section-rest {
@@ -332,10 +393,11 @@ footer .all-txt-foot {
   gap: 8px;
 }
 footer .all-txt-foot i {
-  width: 30px;
+  max-width: 30px;
 }
 footer img {
   filter: brightness(0) invert(1);
-  height: 20px;
+  width: 100%;
+  max-width: 130px;
   padding-bottom: 20px;
 }/*# sourceMappingURL=Styles.css.map */

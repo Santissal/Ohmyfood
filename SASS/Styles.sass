@@ -8,6 +8,14 @@ $color-primary: #9356DC
 $color-green1: #99E2D0
 $color-green2: #008766
 
+=h-txt-menu
+  text-transform: uppercase
+  align-self: start
+  font-size: 17px
+  font-weight: 100
+  margin-bottom: 0px
+  margin-left: 8px
+
 =centrage-block
   display: block
   max-width: 375px
@@ -19,6 +27,20 @@ $color-green2: #008766
   font-weight: 700
   margin-left: 20px
 
+=bouton-rose
+  font-size: 16px
+  font-weight: 500
+  max-width: 218px
+  height: 50px
+  margin-bottom: 60px
+  border-radius: 25px
+  border: none
+  background: linear-gradient($gradient-start, $gradient-end)
+  box-shadow: 0px 4px 10px 0px #00000040
+  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out
+  &:hover 
+    box-shadow: 0px 4px 15px 0px #00000059
+    opacity: 85%
 
 body
   font-family: 'Roboto', sans-serif
@@ -37,16 +59,19 @@ body
   z-index: 2
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2)
   display: flex
-  justify-content: center
   .arrow-on
     margin: 0px
     padding-right: 10px
   .arrow-off
     display: none
   .head-logo
-    margin: 0px
+    margin-left: auto
+    margin-right: auto
+    transform: translateX(-10px)
     img
-      max-width: 197px
+      width: 100%
+      max-width: 160px
+      transform: translateY(5px)
 
 .intro-et-btn
   padding-top: 30px
@@ -113,19 +138,7 @@ body
   width: 140px
 
 .btn
-  font-size: 16px
-  font-weight: 500
-  max-width: 218px
-  height: 50px
-  margin-bottom: 60px
-  border-radius: 25px
-  border: none
-  background: linear-gradient($gradient-start, $gradient-end)
-  box-shadow: 0px 4px 10px 0px #00000040
-  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out
-  &:hover 
-    box-shadow: 0px 4px 15px 0px #00000059
-    opacity: 85%
+  +bouton-rose
   
 .TxtWhite
   color: #FFFFFF
@@ -170,17 +183,26 @@ body
 
 .page-cadre-menu
   display: flex
+  flex-direction: column
   border-radius: 20px
   background-color: $color-grey
   justify-content: center
+  margin-top: -20px
+  position: relative
+  z-index: 2
 
 .page-menu
   display: block
+  align-self: center
 
 .title-menu
   display: flex
   align-items: center
   justify-content: space-between
+  flex-wrap: wrap
+  justify-content: center
+  h1
+    text-align: center
 
 .contenu-menu
   display: flex
@@ -188,16 +210,25 @@ body
   gap: 20px
   align-items: center
   h2
-    align-self: start
+    +h-txt-menu
   h3
-    align-self: start
+    +h-txt-menu
   h4
-    align-self: start
+    +h-txt-menu
+
+.tiret-vert
+  background-color: $color-green1
+  position: relative
+  height: 3px
+  width: 40px
+  align-self: start
+  bottom: 10px
+  margin-left: 8px
 
 .cadre-plat
   padding: 10px
-  width: 85%
-  max-width: 350px
+  width: 90%
+  max-width: 370px
   border-radius: 20px
   background: white
   box-shadow: 0px 4px 15px 0px #00000026
@@ -206,17 +237,25 @@ body
   justify-content: space-around
   .title-plat
     display: block
-    font-size: 18px
+    font-size: 17px
     font-weight: 600
   .dtl-plat
     display: flex
     justify-content: space-between
     .detail
-      font-size: 15px
+      font-size: 14px
       font-weight: 300
     .plat-prix
-      font-size: 15px
+      font-size: 14px
       font-weight: 600
+
+.menu-btn
+  display: flex
+  justify-content: center
+  .btn
+    +bouton-rose
+    margin-top: 60px
+    width: 100%
 
 
 
@@ -288,8 +327,9 @@ footer
     flex-direction: column
     gap: 8px
     i
-      width: 30px
+      max-width: 30px
   img
     filter: brightness(0) invert(1)
-    height: 20px
+    width: 100%
+    max-width: 130px
     padding-bottom: 20px
