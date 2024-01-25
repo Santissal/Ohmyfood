@@ -27,12 +27,12 @@
         </header>
         <main>
             <div class="page-rest">
-                <img src="..\Assets\Images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                <img src="..\Assets\Images\restaurants\louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
             </div>
             <div class="page-cadre-menu">
                 <div class="page-menu">
                     <div class="title-menu">
-                        <h1>La palette du goût</h1>
+                        <h1>La note enchantée</h1>
                         <i class="fa-regular fa-heart"></i>
                     </div>
                     <div class="contenu-menu">
@@ -40,26 +40,34 @@
                         <div class="tiret-vert"></div>
 
                         <div class="cadre-plat">
-                            <div class="title-plat">Fricassée d'escargots</div>
+                            <div class="title-plat">Ravioles de foie gras</div>
                             <div class="dtl-plat">
-                                <div class="detail">Au piment d'Espelette</div>
+                                <div class="detail">Accompagnées de leur crème à la truffe</div>
                                 <div class="plat-prix">25€</div>
                             </div>
                         </div>
 
                         <div class="cadre-plat">
-                            <div class="title-plat">Foie gras de canard mi-cuit</div>
+                            <div class="title-plat">Caviar osciètre</div>
                             <div class="dtl-plat">
-                                <div class="detail">Et ses copeaux de truffe noire</div>
+                                <div class="detail">Sur blini à la farine de blé noir</div>
                                 <div class="plat-prix">35€</div>
                             </div>
                         </div>
 
                         <div class="cadre-plat">
-                            <div class="title-plat">Œuf au plat</div>
+                            <div class="title-plat">Homard et espuma de potiron</div>
                             <div class="dtl-plat">
-                                <div class="detail">Assaisonné à la truffe sur lit de caviar</div>
+                                <div class="detail">Marinés aux zestes d'orange</div>
                                 <div class="plat-prix">20€</div>
+                            </div>
+                        </div>
+
+                        <div class="cadre-plat">
+                            <div class="title-plat">Foie gras de canard cuit entier</div>
+                            <div class="dtl-plat">
+                                <div class="detail">Confiture de figue et pain toasté</div>
+                                <div class="plat-prix">35€</div>
                             </div>
                         </div>
 
@@ -67,25 +75,25 @@
                         <div class="tiret-vert"></div>
 
                         <div class="cadre-plat">
-                            <div class="title-plat">Filet de bœuf aux herbes</div>
+                            <div class="title-plat">Noix de coquilles Saint-Jacques</div>
                             <div class="dtl-plat">
-                                <div class="detail">Accompagné de sa ribambelle de légumes</div>
+                                <div class="detail">Sur lit de purée de céleri-rave</div>
                                 <div class="plat-prix">40€</div>
                             </div>
                         </div>
 
                         <div class="cadre-plat">
-                            <div class="title-plat">Parmentier de queue de bœuf</div>
+                            <div class="title-plat">Langoustine poêlée</div>
                             <div class="dtl-plat">
-                                <div class="detail">À la truffe noire sur sa purée de panais</div>
+                                <div class="detail">Purée de patate douce</div>
                                 <div class="plat-prix">35€</div>
                             </div>
                         </div>
 
                         <div class="cadre-plat">
-                            <div class="title-plat">Filet de turbot</div>
+                            <div class="title-plat">Mijoté de queue de bœuf</div>
                             <div class="dtl-plat">
-                                <div class="detail">Aux agrumes</div>
+                                <div class="detail">Et riz sauvage aux zestes de citron</div>
                                 <div class="plat-prix">44€</div>
                             </div>
                         </div>
@@ -94,25 +102,25 @@
                         <div class="tiret-vert"></div>
 
                         <div class="cadre-plat">
-                            <div class="title-plat">Paris-Brest</div>
+                            <div class="title-plat">Macaron noisette et chocolat</div>
                             <div class="dtl-plat">
-                                <div class="detail">Revisité</div>
+                                <div class="detail">Glace au caramel brun et sel de Guérande</div>
                                 <div class="plat-prix">18€</div>
                             </div>
                         </div>
 
                         <div class="cadre-plat">
-                            <div class="title-plat">Macaron au chocolat d'exception </div>
+                            <div class="title-plat">Baba au rhum revisité</div>
                             <div class="dtl-plat">
-                                <div class="detail">Et glace à la vanille de Madagascar</div>
+                                <div class="detail">Avec son coulis de citron</div>
                                 <div class="plat-prix">22€</div>
                             </div>
                         </div>
 
                         <div class="cadre-plat">
-                            <div class="title-plat">Mousse au chocolat </div>
+                            <div class="title-plat">Tarte au citron meringuée</div>
                             <div class="dtl-plat">
-                                <div class="detail">Au piment d'Espelette et à la truffe noire</div>
+                                <div class="detail">Déstructurée</div>
                                 <div class="plat-prix">23€</div>
                             </div>
                         </div>

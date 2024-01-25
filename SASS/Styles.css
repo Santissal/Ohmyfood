@@ -207,10 +207,12 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .title-menu h1 {
   text-align: center;
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+  font-weight: 300;
 }
 
 .contenu-menu {
@@ -223,7 +225,7 @@ body {
   text-transform: uppercase;
   align-self: start;
   font-size: 17px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 0px;
   margin-left: 8px;
 }
@@ -231,7 +233,7 @@ body {
   text-transform: uppercase;
   align-self: start;
   font-size: 17px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 0px;
   margin-left: 8px;
 }
@@ -239,7 +241,7 @@ body {
   text-transform: uppercase;
   align-self: start;
   font-size: 17px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 0px;
   margin-left: 8px;
 }
