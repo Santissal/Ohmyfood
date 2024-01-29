@@ -42,6 +42,10 @@ $color-green2: #008766
     box-shadow: 0px 4px 15px 0px #00000059
     opacity: 85%
 
+main
+  display: flex
+  flex-direction: column
+
 body
   font-family: 'Roboto', sans-serif
   margin: 0
@@ -190,10 +194,15 @@ body
   margin-top: -20px
   position: relative
   z-index: 2
+  max-width: 1044px
+  align-self: center
+  width: 100%
 
 .page-menu
   display: block
   align-self: center
+  width: 95%
+  max-width: 425px
 
 .title-menu
   display: flex
@@ -329,7 +338,8 @@ footer
     flex-direction: column
     gap: 8px
     i
-      max-width: 30px
+      max-width: 14px
+      margin-right: 10px
   img
     filter: brightness(0) invert(1)
     width: 100%
