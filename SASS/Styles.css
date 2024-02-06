@@ -23,6 +23,7 @@ body {
   display: flex;
 }
 .head-top .arrow-on {
+  color: #353535;
   margin: 0px;
   padding-right: 10px;
 }
@@ -61,6 +62,11 @@ body {
   margin: auto;
   width: 95%;
   margin-top: 45px;
+}
+@media (min-width: 769px) {
+  .section-fct {
+    max-width: 1024px;
+  }
 }
 .section-fct h3 {
   font-size: 24px;
@@ -159,6 +165,12 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+}
+@media (min-width: 769px) {
+  .fct-list {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .num-fct {
@@ -326,6 +338,11 @@ body {
   padding-top: 30px;
   padding-bottom: 50px;
 }
+@media (min-width: 769px) {
+  .section-rest {
+    max-width: 1024px;
+  }
+}
 .section-rest h3 {
   font-size: 24px;
   font-weight: 700;
@@ -338,6 +355,13 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 30px;
+}
+@media (min-width: 769px) {
+  .rest-list {
+    flex-direction: unset;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 .rest-list img {
   width: 100%;
@@ -357,6 +381,11 @@ body {
   flex-direction: column;
   border-radius: 20px;
   background: white;
+}
+@media (min-width: 769px) {
+  .restaurant {
+    width: calc(50% - 50px);
+  }
 }
 
 .nouv {
@@ -400,14 +429,25 @@ footer {
   color: white;
   padding: 20px;
 }
+@media (min-width: 769px) {
+  footer {
+    display: flex;
+    gap: 24px;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+}
 footer .all-txt-foot {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 15px;
 }
 @media (min-width: 769px) {
   footer .all-txt-foot {
     flex-direction: row;
+  }
+  footer .all-txt-foot div:nth-child(2) {
+    margin-right: 10px;
   }
 }
 footer .all-txt-foot i {
@@ -419,4 +459,9 @@ footer img {
   width: 100%;
   max-width: 130px;
   padding-bottom: 20px;
+}
+@media (min-width: 769px) {
+  footer img {
+    padding-bottom: 0px;
+  }
 }/*# sourceMappingURL=Styles.css.map */
