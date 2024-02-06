@@ -8,6 +8,10 @@ $color-primary: #9356DC
 $color-green1: #99E2D0
 $color-green2: #008766
 
+@mixin rspsiv-desk
+  @media (min-width: 769px)
+    @content
+
 =h-txt-menu
   text-transform: uppercase
   align-self: start
@@ -19,8 +23,7 @@ $color-green2: #008766
 =centrage-block
   display: block
   max-width: 375px
-  margin-left: auto
-  margin-right: auto
+  margin: auto
 
 =title-margin
   font-size: 24px
@@ -91,6 +94,7 @@ body
 
 .section-fct
   +centrage-block
+  width: 95%
   margin-top: 45px
   h3
     +title-margin
@@ -183,7 +187,7 @@ body
     width: 100%
     height: 230px
     object-fit: cover
-    object-position: center 80%
+    object-position: center 60%
 
 .page-cadre-menu
   display: flex
@@ -207,7 +211,7 @@ body
 .title-menu
   display: flex
   align-items: center
-  justify-content: space-between
+  justify-content: space-evenly
   flex-wrap: wrap
   h1
     text-align: center
@@ -293,6 +297,8 @@ body
 
 .restaurant
   width: 90%
+  text-decoration: none
+  color: inherit
   contain: content
   display: flex
   flex-direction: column
@@ -337,6 +343,8 @@ footer
     display: flex
     flex-direction: column
     gap: 8px
+    @include rspsiv-desk
+      flex-direction: row
     i
       max-width: 14px
       margin-right: 10px

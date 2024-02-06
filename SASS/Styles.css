@@ -58,8 +58,8 @@ body {
 .section-fct {
   display: block;
   max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  width: 95%;
   margin-top: 45px;
 }
 .section-fct h3 {
@@ -187,8 +187,8 @@ body {
   height: 230px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center 80%;
-     object-position: center 80%;
+  -o-object-position: center 60%;
+     object-position: center 60%;
 }
 
 .page-cadre-menu {
@@ -215,7 +215,7 @@ body {
 .title-menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .title-menu h1 {
@@ -321,8 +321,7 @@ body {
 .section-rest {
   display: block;
   max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   margin-top: 60px;
   padding-top: 30px;
   padding-bottom: 50px;
@@ -351,6 +350,8 @@ body {
 
 .restaurant {
   width: 90%;
+  text-decoration: none;
+  color: inherit;
   contain: content;
   display: flex;
   flex-direction: column;
@@ -403,6 +404,11 @@ footer .all-txt-foot {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+@media (min-width: 769px) {
+  footer .all-txt-foot {
+    flex-direction: row;
+  }
 }
 footer .all-txt-foot i {
   max-width: 14px;
