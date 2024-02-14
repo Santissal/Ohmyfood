@@ -61,7 +61,8 @@ body {
   max-width: 375px;
   margin: auto;
   width: 95%;
-  margin-top: 45px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 @media (min-width: 769px) {
   .section-fct {
@@ -278,7 +279,35 @@ body {
   margin-left: 8px;
 }
 
+.cadre-G {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1;
+  transition: width 1s ease;
+}
+
+.anim-check {
+  display: flex;
+  height: 100%;
+  width: 0%;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  right: 0;
+  z-index: 0;
+  transition: width 1s ease;
+}
+
+.fa-circle-check {
+  transition: transform 1s ease;
+}
+
 .cadre-plat {
+  contain: content;
   padding: 10px;
   width: 90%;
   max-width: 370px;
@@ -286,13 +315,25 @@ body {
   background: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.cadre-plat:hover .anim-check {
+  width: 20%;
+}
+.cadre-plat:hover .anim-check i {
+  transform: rotate(360deg);
+}
+.cadre-plat:hover .cadre-G {
+  width: 80%;
 }
 .cadre-plat .title-plat {
   display: block;
   font-size: 17px;
   font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .cadre-plat .dtl-plat {
   display: flex;
@@ -301,6 +342,9 @@ body {
 .cadre-plat .dtl-plat .detail {
   font-size: 14px;
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .cadre-plat .dtl-plat .plat-prix {
   font-size: 14px;
@@ -335,7 +379,6 @@ body {
   max-width: 375px;
   margin: auto;
   margin-top: 60px;
-  padding-top: 30px;
   padding-bottom: 50px;
 }
 @media (min-width: 769px) {
@@ -435,6 +478,8 @@ footer {
     gap: 24px;
     flex-direction: row-reverse;
     align-items: flex-end;
+    padding-top: 50px;
+    padding-right: 50px;
   }
 }
 footer .all-txt-foot {

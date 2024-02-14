@@ -12,6 +12,11 @@ $color-green2: #008766
   @media (min-width: 769px)
     @content
 
+@mixin txt-elip
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
 =h-txt-menu
   text-transform: uppercase
   align-self: start
@@ -96,7 +101,8 @@ body
 .section-fct
   +centrage-block
   width: 95%
-  margin-top: 45px
+  margin-top: 40px
+  margin-bottom: 40px
   @include rspsiv-desk
     max-width: 1024px
   h3
@@ -246,7 +252,33 @@ body
   bottom: 10px
   margin-left: 8px
 
+.cadre-G
+  display: flex
+  flex-direction: column
+  width: 100%
+  z-index: 1
+  transition: width 1s ease
+
+.anim-check
+  display: flex
+  height: 100%
+  width: 0%
+  justify-content: center
+  align-items: center
+  background-color: $color-green1
+  position: absolute
+  color: white
+  font-size: 30px
+  right: 0
+  z-index: 0
+  transition: width 1s ease
+
+.fa-circle-check
+  transition: transform 1s ease
+
+
 .cadre-plat
+  contain: content
   padding: 10px
   width: 90%
   max-width: 370px
@@ -254,18 +286,26 @@ body
   background: white
   box-shadow: 0px 4px 15px 0px #00000026
   display: flex
-  flex-direction: column
-  justify-content: space-around
+  flex-direction: row
+  align-items: center
+  &:hover .anim-check
+    width: 20%
+    i
+      transform: rotate(360deg)
+  &:hover .cadre-G
+    width: 80%
   .title-plat
     display: block
     font-size: 17px
     font-weight: 600
+    @include txt-elip
   .dtl-plat
     display: flex
     justify-content: space-between
     .detail
       font-size: 14px
       font-weight: 300
+      @include txt-elip
     .plat-prix
       font-size: 14px
       font-weight: 600
@@ -283,7 +323,6 @@ body
 .section-rest
   +centrage-block
   margin-top: 60px
-  padding-top: 30px
   padding-bottom: 50px
   @include rspsiv-desk
     max-width: 1024px
@@ -358,6 +397,8 @@ footer
     gap: 24px
     flex-direction: row-reverse
     align-items: flex-end
+    padding-top: 50px
+    padding-right: 50px
   .all-txt-foot
     display: flex
     flex-direction: column
