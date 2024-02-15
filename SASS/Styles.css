@@ -14,6 +14,37 @@ body {
   flex-direction: column;
 }
 
+.coeuricon {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.fa-heart {
+  position: absolute;
+  right: 0;
+  transition: all 0.5s;
+}
+.fa-heart.fa-solid {
+  opacity: 0;
+}
+.fa-heart.fa-solid:hover {
+  opacity: 1;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.fa-heart:before {
+  font-size: 25px;
+}
+.fa-heart.fa-regular {
+  opacity: 1;
+}
+.fa-heart.fa-regular:hover {
+  opacity: 0;
+}
+
 .head-top {
   align-items: center;
   padding: 20px;
@@ -284,7 +315,7 @@ body {
   flex-direction: column;
   width: 100%;
   z-index: 1;
-  transition: width 1s ease;
+  transition: all 0.4s ease;
 }
 
 .anim-check {
@@ -293,17 +324,17 @@ body {
   width: 0%;
   justify-content: center;
   align-items: center;
-  background-color: #99E2D0;
+  background-color: #FF79DA;
   position: absolute;
-  color: white;
-  font-size: 30px;
+  color: #9356DC;
+  font-size: 0px;
   right: 0;
   z-index: 0;
-  transition: width 1s ease;
+  transition: all 0.4s ease;
 }
-
-.fa-circle-check {
-  transition: transform 1s ease;
+.anim-check i {
+  transition: all 0.4s ease;
+  color: #9356DC;
 }
 
 .cadre-plat {
@@ -320,9 +351,12 @@ body {
 }
 .cadre-plat:hover .anim-check {
   width: 20%;
+  background-color: #99E2D0;
 }
 .cadre-plat:hover .anim-check i {
   transform: rotate(360deg);
+  font-size: 30px;
+  color: white;
 }
 .cadre-plat:hover .cadre-G {
   width: 80%;
@@ -508,5 +542,31 @@ footer img {
 @media (min-width: 769px) {
   footer img {
     padding-bottom: 0px;
+  }
+}
+
+.contenair-load {
+  background-color: pink;
+}
+
+.loader {
+  position: fixed;
+  z-index: 3;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  animation: spin 2s cubic-bezier(0.56, -0.62, 0.37, 1.43) infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }/*# sourceMappingURL=Styles.css.map */

@@ -63,6 +63,29 @@ body
   display: flex
   flex-direction: column
 
+.coeuricon
+  display: flex
+  position: relative
+  align-items: center
+
+.fa-heart
+  position: absolute
+  right: 0
+  transition: all 0.5s
+  &.fa-solid
+    opacity: 0
+    &:hover
+      opacity: 1
+      background: linear-gradient(to bottom, $gradient-end, $gradient-start)
+      color: transparent
+      background-clip: text
+  &:before
+    font-size: 25px
+  &.fa-regular
+    opacity: 1
+    &:hover
+      opacity: 0
+  
 
 .head-top
   align-items: center
@@ -257,7 +280,7 @@ body
   flex-direction: column
   width: 100%
   z-index: 1
-  transition: width 1s ease
+  transition: all 0.4s ease
 
 .anim-check
   display: flex
@@ -265,16 +288,16 @@ body
   width: 0%
   justify-content: center
   align-items: center
-  background-color: $color-green1
+  background-color: $gradient-start
   position: absolute
-  color: white
-  font-size: 30px
+  color: $gradient-end
+  font-size: 0px
   right: 0
   z-index: 0
-  transition: width 1s ease
-
-.fa-circle-check
-  transition: transform 1s ease
+  transition: all 0.4s ease
+  i
+    transition: all 0.4s ease
+    color: $gradient-end
 
 
 .cadre-plat
@@ -290,10 +313,14 @@ body
   align-items: center
   &:hover .anim-check
     width: 20%
+    background-color: $color-green1
     i
       transform: rotate(360deg)
+      font-size: 30px
+      color: white
   &:hover .cadre-G
     width: 80%
+
   .title-plat
     display: block
     font-size: 17px
@@ -417,3 +444,24 @@ footer
     padding-bottom: 20px
     @include rspsiv-desk
       padding-bottom: 0px
+
+// parametre du loader 
+
+.contenair-load
+  background-color: pink
+.loader
+  position: fixed
+  z-index: 3
+  top: 40%
+  left: 40%
+  transform: translate(-50%, -50%)
+  border-top: 4px solid #3498db // Couleur de la bordure supérieure
+  border-radius: 50% // Forme du cercle
+  width: 300px // Largeur
+  height: 300px // Hauteur
+  animation: spin 2s cubic-bezier(0.56, -0.62, 0.37, 1.43) infinite // Animation : nom de l'animation, durée, type d'animation, répétition infinie
+@keyframes spin
+  0%
+    transform: rotate(0deg) // Angle de départ de la rotation
+  100%
+    transform: rotate(360deg) // Angle de fin de la rotation
