@@ -313,7 +313,8 @@ body
   display: flex
   flex-direction: row
   align-items: center
-  transition: transform 0.5s
+  transition: transform 0.5s, opacity 0.5s ease
+  opacity: 0
   &:hover .anim-check
     width: 20%
     background-color: $color-green1
@@ -323,7 +324,6 @@ body
       color: white
   &:hover .cadre-G
     width: 80%
-
   .title-plat
     display: block
     font-size: 17px
@@ -339,6 +339,37 @@ body
     .plat-prix
       font-size: 14px
       font-weight: 600
+
+.cadre-plat:nth-child(1)
+  animation: fadeIn 0.5s ease forwards
+  animation-delay: 0.1s
+.cadre-plat:nth-child(2)
+  animation: fadeIn 0.5s ease forwards
+  animation-delay: 0.2s
+.cadre-plat:nth-child(3)
+  animation: fadeIn 0.5s ease forwards
+  animation-delay: 0.3s
+.cadre-plat:nth-child(4)
+  animation: fadeIn 0.5s ease forwards
+  animation-delay: 0.4s
+.cadre-plat:nth-child(5)
+  animation: fadeIn 0.5s ease forwards
+  animation-delay: 0.5s
+.cadre-plat:nth-child(6)
+  animation: fadeIn 0.5s ease forwards
+  animation-delay: 0.6s
+.cadre-plat:nth-child(7)
+  animation: fadeIn 0.5s ease forwards
+  animation-delay: 0.7s
+.cadre-plat:nth-child(8)
+  animation: fadeIn 0.5s ease forwards
+  animation-delay: 0.8s
+.cadre-plat:nth-child(9)
+  animation: fadeIn 0.5s ease forwards
+  animation-delay: 0.9s
+.cadre-plat:nth-child(10)
+  animation: fadeIn 0.5s ease forwards
+  animation-delay: 1s
 
 .menu-btn
   display: flex
@@ -554,3 +585,9 @@ footer
     display: block
   100%
     display: none
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
