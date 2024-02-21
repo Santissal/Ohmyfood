@@ -453,6 +453,41 @@ body {
   animation-delay: 1.3s;
 }
 
+.cadre-plat:nth-of-type(14) {
+  animation: fadeIn 0.5s ease forwards, rotationX 0.5s cubic-bezier(0.44, -0.72, 0.56, 1.83) forwards;
+  animation-delay: 1.4s;
+}
+
+.cadre-plat:nth-of-type(15) {
+  animation: fadeIn 0.5s ease forwards, rotationX 0.5s cubic-bezier(0.44, -0.72, 0.56, 1.83) forwards;
+  animation-delay: 1.5s;
+}
+
+.cadre-plat:nth-of-type(16) {
+  animation: fadeIn 0.5s ease forwards, rotationX 0.5s cubic-bezier(0.44, -0.72, 0.56, 1.83) forwards;
+  animation-delay: 1.6s;
+}
+
+.cadre-plat:nth-of-type(17) {
+  animation: fadeIn 0.5s ease forwards, rotationX 0.5s cubic-bezier(0.44, -0.72, 0.56, 1.83) forwards;
+  animation-delay: 1.7s;
+}
+
+.cadre-plat:nth-of-type(18) {
+  animation: fadeIn 0.5s ease forwards, rotationX 0.5s cubic-bezier(0.44, -0.72, 0.56, 1.83) forwards;
+  animation-delay: 1.8s;
+}
+
+.cadre-plat:nth-of-type(19) {
+  animation: fadeIn 0.5s ease forwards, rotationX 0.5s cubic-bezier(0.44, -0.72, 0.56, 1.83) forwards;
+  animation-delay: 1.9s;
+}
+
+.cadre-plat:nth-of-type(20) {
+  animation: fadeIn 0.5s ease forwards, rotationX 0.5s cubic-bezier(0.44, -0.72, 0.56, 1.83) forwards;
+  animation-delay: 2s;
+}
+
 .menu-btn {
   display: flex;
   justify-content: center;
