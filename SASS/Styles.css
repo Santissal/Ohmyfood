@@ -120,6 +120,10 @@ body {
 }
 .fct i {
   align-self: center;
+  color: #7E7E7E;
+}
+.fct:hover i {
+  color: #9356DC;
 }
 .fct span {
   flex-grow: 1;
@@ -127,15 +131,6 @@ body {
   margin: 0 30px 0 0px;
   font-size: 16px;
   font-weight: 500;
-}
-.fct .fa-store {
-  color: #9356DC;
-}
-.fct .fa-list-ul {
-  color: #7E7E7E;
-}
-.fct .fa-mobile-screen-button {
-  color: #7E7E7E;
 }
 
 .sct-loca {
@@ -609,6 +604,10 @@ footer {
   font-weight: 500;
   color: white;
   padding: 20px;
+}
+footer .txt-foot {
+  text-decoration: none;
+  color: white;
 }
 @media (min-width: 769px) {
   footer {
